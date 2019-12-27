@@ -4,36 +4,40 @@ import * as Scroll from 'react-scroll';
 
 
 class TopMenu extends React.Component {
+
+    state = { isTopOfPage: true };
+
+
     constructor (props){
         super(props);
-        this.scrollToTop = this.scrollToTop.bind(this);
+        this.handleScroll = this.handleScroll.bind(this);
     }
     
     componentDidMount() {
-    
-      Scroll.Events.scrollEvent.register('begin', function() {
-        console.log("begin", arguments);
-      });
-    
-      Scroll.Events.scrollEvent.register('end', function() {
-        console.log("end", arguments);
-      });
-    
-      Scroll.scrollSpy.update();
-    }
-    scrollToTop(options) {
-      Scroll.animateScroll.scrollToTop(options);
+      window.addEventListener('scroll', this.handleScroll);
     }
     componentWillUnmount() {
-      Scroll.Events.scrollEvent.remove('begin');
-      Scroll.Events.scrollEvent.remove('end');
+      window.removeEventListener('scroll', this.handleScroll);
     }
 
+    handleScroll(e) {
+        const currentYScroll = window.scrollY;
+        
+        if (this.state.isTopOfPage && currentYScroll < 50) {
+            return;
+        }
+        if (currentYScroll < 50) {
+          this.setState({ isTopOfPage: true });
+        } else {
+            this.setState({ isTopOfPage: false });
+        }
+      }
+
     render() {
-      return <Navbar fixed="top" expand="sm"> {/* missing id mainNav */}
+      return <Navbar fixed="top" className={(this.state.isTopOfPage ? '' : 'navbar-shrink')} expand="sm"> {/* missing id mainNav */}
                 <Container>
                     <Navbar.Brand>
-                        <Scroll.Link className="nav-link" smooth={true} duration={500} spy={true} href="#home" to="home">React-GrayScale</Scroll.Link>
+                        <Scroll.Link smooth={true} duration={500} spy={true} href="#scroll-to-top" to="scroll-to-top">React-GrayScale</Scroll.Link>
                     </Navbar.Brand> 
                     <Navbar.Toggle className="navbar-toggler-right" aria-controls="responsive-navbar-nav" aria-expanded="false" aria-label="Toggle navigation" />
                     <Navbar.Collapse id="navbarResponsive">

@@ -8,11 +8,12 @@ function App() {
 
   return (
     <div id="home">
+      <div ></div>
       {/* Navigation */}
       <TopMenu></TopMenu>
 
       {/* Header */}
-      <header className="masthead">
+      <header id="scroll-to-top" name="scroll-to-top" className="masthead">
         <div name="home" className="container d-flex h-100 align-items-center">
           <div className="mx-auto text-center">
             <h1 className="mx-auto my-0 text-uppercase">Grayscale</h1>
