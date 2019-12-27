@@ -1,12 +1,17 @@
 import React from 'react';
 import './App.scss';
+import TopMenu from './components/TopMenu';
+
 
 function App() {
+
+
   return (
-    <div id="page-top">
+    <div id="home">
 
       {/* Navigation */}
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <TopMenu></TopMenu>
+      {/* <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
           <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +32,7 @@ function App() {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       {/* Header */}
       <header class="masthead">
@@ -41,7 +46,7 @@ function App() {
       </header>
 
       {/* About section */}
-      <section id="about" class="about-section text-center">
+      <section id="about" name="about" class="about-section text-center">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
@@ -55,7 +60,7 @@ function App() {
       </section>
 
       {/* Projects section */}
-      <section id="projects" class="projects-section bg-light">
+      <section id="projects" name="projects" class="projects-section bg-light">
         <div class="container">
 
           {/* Featured Project Row */}
@@ -111,7 +116,7 @@ function App() {
       </section>
 
       {/* <!-- Signup Section --> */}
-      <section id="signup" class="signup-section">
+      <section id="signup" name="signup" class="signup-section">
         <div class="container">
           <div class="row">
             <div class="col-md-10 col-lg-8 mx-auto text-center">
@@ -130,7 +135,7 @@ function App() {
       </section>
 
       {/* <!-- Contact Section --> */}
-      <section class="contact-section bg-black">
+      <section name="contact" class="contact-section bg-black">
         <div class="container">
 
           <div class="row">
