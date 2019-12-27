@@ -23,10 +23,10 @@ class TopMenu extends React.Component {
     handleScroll(e) {
         const currentYScroll = window.scrollY;
         
-        if (this.state.isTopOfPage && currentYScroll < 50) {
+        if (this.state.isTopOfPage && currentYScroll < 10) {
             return;
         }
-        if (currentYScroll < 50) {
+        if (currentYScroll < 10) {
           this.setState({ isTopOfPage: true });
         } else {
             this.setState({ isTopOfPage: false });
@@ -36,9 +36,7 @@ class TopMenu extends React.Component {
     render() {
       return <Navbar fixed="top" className={(this.state.isTopOfPage ? '' : 'navbar-shrink')} expand="sm"> {/* missing id mainNav */}
                 <Container>
-                    <Navbar.Brand>
-                        <Scroll.Link smooth={true} duration={500} spy={true} href="#scroll-to-top" to="scroll-to-top">React-GrayScale</Scroll.Link>
-                    </Navbar.Brand> 
+                    <Scroll.Link className="navbar-brand" smooth={true} duration={500} spy={true} href="#scroll-to-top" to="scroll-to-top">React-GrayScale</Scroll.Link>
                     <Navbar.Toggle className="navbar-toggler-right" aria-controls="responsive-navbar-nav" aria-expanded="false" aria-label="Toggle navigation" />
                     <Navbar.Collapse id="navbarResponsive">
                     <Nav className="ml-auto">
