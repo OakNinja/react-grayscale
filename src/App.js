@@ -1,4 +1,5 @@
 import React from 'react';
+import * as Scroll from 'react-scroll';
 import './App.scss';
 import TopMenu from './components/TopMenu';
 
@@ -16,9 +17,9 @@ function App() {
       <header id="scroll-to-top" name="scroll-to-top" className="masthead">
         <div name="home" className="container d-flex h-100 align-items-center">
           <div className="mx-auto text-center">
-            <h1 className="mx-auto my-0 text-uppercase">Grayscale</h1>
-            <h2 className="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
-            <a href="#about" className="btn btn-primary js-scroll-trigger">Get Started</a>
+            <h1 className="mx-auto my-0 text-uppercase">React-Grayscale</h1>
+            <h2 className="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page theme based on Grayscale by <a href="https://startbootstrap.com/" rel="noopener noreferrer" target="_blank" >Start Bootstrap</a></h2>
+            <Scroll.Link smooth={true} duration={500} spy={true} to="about" className="btn btn-primary js-scroll-trigger">Get Started</Scroll.Link>
           </div>
         </div>
       </header>

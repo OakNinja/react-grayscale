@@ -34,7 +34,7 @@ class TopMenu extends React.Component {
       }
 
     render() {
-      return <Navbar fixed="top" className={(this.state.isTopOfPage ? '' : 'navbar-shrink')} expand="sm"> {/* missing id mainNav */}
+      return <Navbar fixed="top" className={"topmenu-navbar " + (this.state.isTopOfPage ? '' : 'navbar-shrink')} expand="sm"> {/* missing id mainNav */}
                 <Container>
                     <Scroll.Link className="navbar-brand" smooth={true} duration={500} spy={true} href="#scroll-to-top" to="scroll-to-top">React-GrayScale</Scroll.Link>
                     <Navbar.Toggle className="navbar-toggler-right" aria-controls="responsive-navbar-nav" aria-expanded="false" aria-label="Toggle navigation" />
