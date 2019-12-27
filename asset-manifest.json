@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-grayscale/static/css/main.e7cbdd44.chunk.css",
+    "main.js": "/react-grayscale/static/js/main.e6ad20c7.chunk.js",
+    "main.js.map": "/react-grayscale/static/js/main.e6ad20c7.chunk.js.map",
+    "runtime-main.js": "/react-grayscale/static/js/runtime-main.7c1b0765.js",
+    "runtime-main.js.map": "/react-grayscale/static/js/runtime-main.7c1b0765.js.map",
+    "static/js/2.cdfe1eb2.chunk.js": "/react-grayscale/static/js/2.cdfe1eb2.chunk.js",
+    "static/js/2.cdfe1eb2.chunk.js.map": "/react-grayscale/static/js/2.cdfe1eb2.chunk.js.map",
+    "index.html": "/react-grayscale/index.html",
+    "precache-manifest.8c4faf555468e631540f4f66f5f62783.js": "/react-grayscale/precache-manifest.8c4faf555468e631540f4f66f5f62783.js",
+    "service-worker.js": "/react-grayscale/service-worker.js",
+    "static/css/main.e7cbdd44.chunk.css.map": "/react-grayscale/static/css/main.e7cbdd44.chunk.css.map",
+    "static/js/2.cdfe1eb2.chunk.js.LICENSE": "/react-grayscale/static/js/2.cdfe1eb2.chunk.js.LICENSE",
+    "static/media/App.scss": "/react-grayscale/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7c1b0765.js",
+    "static/js/2.cdfe1eb2.chunk.js",
+    "static/css/main.e7cbdd44.chunk.css",
+    "static/js/main.e6ad20c7.chunk.js"
+  ]
+}
