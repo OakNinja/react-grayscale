@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Work in progress for converting the Grayscale theme from startbootstrap.com to React. 
+* No jQuery
+* Bootstrap css, Bootstrap core replaced with React-Bootstrap
+* Scrollspy via react-scroll
+
+Todo:
+Make components out of more stuff
+Cleanup
+Less dependencies
+ 
+
 ## Available Scripts
 
 In the project directory, you can run:
