@@ -1,3 +1,6 @@
+
+Live demo [here](https://react-grayscale.oak.ninja).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Work in progress for converting the Grayscale theme from startbootstrap.com to React. 
@@ -9,7 +12,7 @@ Todo:
 Make components out of more stuff
 Cleanup
 Less dependencies
- 
+
 
 ## Available Scripts
 

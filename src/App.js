@@ -22,7 +22,7 @@ function App() {
       </Header>
 
       {/* About section */}
-      <Section name="about" 
+      <Section name="about" classList="text-center"
         html={
               <div className="container">
                 <div className="row">
@@ -38,7 +38,7 @@ function App() {
       ></Section>
 
       {/* Projects section */}
-      <Section name="projects"
+      <Section name="projects" classList="bg-light"
         html={<div className="container">
 
         {/* Featured Project Row */}
@@ -94,27 +94,29 @@ function App() {
       ></Section>
 
       {/* <!-- Signup Section --> */}
-      <section id="signup" name="signup" className="signup-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-10 col-lg-8 mx-auto text-center">
+      <Section name="signup"
+        html = {
+          <div className="container">
+            <div className="row">
+              <div className="col-md-10 col-lg-8 mx-auto text-center">
 
-              <i className="far fa-paper-plane fa-2x mb-2 text-white"></i>
-              <h2 className="text-white mb-5">Subscribe to receive updates!</h2>
+                <i className="fa fa-paper-plane fa-2x mb-2 text-white"></i>
+                <h2 className="text-white mb-5">Subscribe to receive updates!</h2>
 
-              <form className="form-inline d-flex">
-                <input type="email" className="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address..."></input>
-                <button type="submit" className="btn btn-primary mx-auto">Subscribe</button>
-              </form>
+                <form className="form-inline d-flex">
+                  <input type="email" className="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address..."></input>
+                  <button type="submit" className="btn btn-primary mx-auto">Subscribe</button>
+                </form>
 
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
+        }
+      ></Section>
       {/* <!-- Contact Section --> */}
-      <section name="contact" className="contact-section bg-black">
-        <div className="container">
+      <Section name="contact" classList="bg-black"
+        html= {
+          <div className="container">
 
           <div className="row">
 
@@ -167,8 +169,8 @@ function App() {
           </div>
 
         </div>
-      </section>
-
+        }
+      ></Section>
       {/* <!-- Footer --> */}
       <footer className="bg-black small text-center text-white-50">
         <div className="container">
