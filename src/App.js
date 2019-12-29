@@ -10,10 +10,8 @@ function App() {
 
   return (
     <div id="home">
-      {/* Navigation */}
       <TopMenu></TopMenu>
 
-      {/* Header */}
       <Header 
         title="React-Grayscale"
         text={<span>A free, responsive, one page theme based on Grayscale by <a href="https://startbootstrap.com/" rel="noopener noreferrer" target="_blank" >Start Bootstrap</a></span>}
@@ -21,7 +19,6 @@ function App() {
       >
       </Header>
 
-      {/* About section */}
       <Section name="about" classList="text-center"
         html={
               <div className="container">
@@ -37,7 +34,6 @@ function App() {
              }
       ></Section>
 
-      {/* Projects section */}
       <Section name="projects" classList="bg-light"
         html={<div className="container">
 
@@ -93,7 +89,6 @@ function App() {
       </div>}
       ></Section>
 
-      {/* <!-- Signup Section --> */}
       <Section name="signup"
         html = {
           <div className="container">
@@ -113,7 +108,7 @@ function App() {
           </div>
         }
       ></Section>
-      {/* <!-- Contact Section --> */}
+
       <Section name="contact" classList="bg-black"
         html= {
           <div className="container">
@@ -171,7 +166,7 @@ function App() {
         </div>
         }
       ></Section>
-      {/* <!-- Footer --> */}
+
       <footer className="bg-black small text-center text-white-50">
         <div className="container">
           Copyright &copy; Your Website 2019
